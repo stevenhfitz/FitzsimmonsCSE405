@@ -1,0 +1,35 @@
+<html>
+    <head>
+    </head>
+
+    <body>
+       
+        <p id='graph'>Do not press the button</p>
+        
+        <button id='Donot' type='button' onclick='show();'>Do not press this button</button>
+        
+        <button id='redeem' type='button' style="display: none" onclick='hide();'>Redeem Yourself</button>
+        
+        
+        <script>
+            //console.log("hi.");
+            //document.write("Hello again");
+            
+            function show()
+            {
+                document.getElementById('redeem').style.display='inline';
+                document.getElementById("graph").innerHTML = "I said do not press the button."
+                document.getElementById("Donot").style.display='none';
+                
+            }
+        
+        function hide()
+        {
+            document.getElementById('redeem').style.display='none';
+            document.getElementById('graph').innerHTML ="You learned you lesson. So you should not press that button again";
+            document.getElementById("Donot").style.display='inline';
+        }
+        </script>
+        </script>
+    </body>
+</html>
