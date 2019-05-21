@@ -1,0 +1,227 @@
+<html>
+    <head>
+    </head>
+
+    <body>
+       
+        <p id='graph'>Do not press the button</p>
+        
+        <button id='Donot' type='button' onclick='show();'>Do not press this button</button>
+        
+        <button id='redeem' type='button' style="display: none" onclick='hide();'>Redeem Yourself</button>
+        
+        <br>
+        <br>
+        <br>
+        <p><u>Button Mark 2</u></p>
+        <br>
+        <button id='red' type ='button' onclick='push();'>Button</button>
+        <button id='blue' type ='button' style="display: none">Button</button>
+        <button id='green' type ='button' style="display: none" onclick='push2();'>Button</button>
+        <button id='yellow' type ='button' style="display: none">Button</button>
+        <button id='white' type ='button' style="display: none">Button</button>
+        <br>
+        <p id='text'>Don't press the button</p>
+        <br>
+        <p id='test'></p>
+        <p id='test2'></p>
+        
+        <script>
+            //console.log("hi.");
+            //document.write("Hello again");
+            var count = 0;
+            
+            function show()
+            {
+                document.getElementById('redeem').style.display='inline';
+                document.getElementById("graph").innerHTML = "I said do not press the button."
+                document.getElementById("Donot").style.display='none';
+                
+            }
+        
+        function hide()
+        {
+            document.getElementById('redeem').style.display='none';
+            document.getElementById('graph').innerHTML ="You learned your lesson. So you should not press that button again";
+            document.getElementById("Donot").style.display='inline';
+        }
+        
+        function push()
+        {
+          if(count == 0)
+          {
+                document.getElementById('text').innerHTML = "Ahem. Don't press the button.";
+             // document.getElementById('test').innerHTML = count;
+              count = count + 1;
+          }
+          else if(count == 1)
+          {
+              document.getElementById('text').innerHTML = "Oh yeah? Fine. Press it again.";
+              //document.getElementById('test').innerHTML = count;
+              count = count + 1;
+              
+          }
+          else if(count == 2)
+          {
+              document.getElementById('text').innerHTML = "Again.";
+              count = count +1;
+              
+          }
+          else if(count == 3)
+          {
+              document.getElementById('text').innerHTML = "Do it again.";
+              count = count + 1;
+          }
+          else if(count == 4)
+          {
+              document.getElementById('text').innerHTML = "Aren't you getting tired?";
+              count = count +1;
+              
+          }
+          else if(count == 5)
+          {
+              document.getElementById('text').innerHTML = "Cause I am.";
+              count = count +1;
+              
+          }
+          else if(count == 6)
+          {
+              document.getElementById('text').innerHTML = "Just gonna go home, go to bed.";
+              count = count +1;
+              
+          }
+          else if(count == 7)
+          {
+              document.getElementById('text').innerHTML = "It's been a long day.";
+              count = count +1;
+              
+          }
+          else if(count == 8)
+          {
+              document.getElementById('text').innerHTML = "Fine. You've forced me to use my secret weapon.";
+              count = count +1;
+              
+          }
+          else if(count == 9)
+          {
+              document.getElementById('text').innerHTML = "Behold!!!";
+              count = count +1;
+              
+          }
+          else if(count == 10)
+          {
+              document.getElementById('text').innerHTML = "";
+              count = count +1;
+              
+          }
+          else if(count == 11)
+          {
+              document.getElementById('text').innerHTML = "Something went wrong. One moment please...";
+              count = count +1;
+              
+          }
+          else if(count == 12)
+          {
+              document.getElementById('text').innerHTML = "Stupid spring got loose again. Such a pain.";
+              count = count +1;
+              
+          }
+          else if(count == 13)
+          {
+              document.getElementById('text').innerHTML = "Okay got it.";
+              count = count +1;
+              
+          }
+          else if(count == 14)
+          {
+              document.getElementById('text').innerHTML = "Now Behold!!! Five buttons! Which one is the correct one?";
+              count = count +1;
+              document.getElementById('blue').style.display='inline';
+              document.getElementById('green').style.display='inline';
+              document.getElementById('yellow').style.display='inline';
+              document.getElementById('white').style.display='inline';
+              
+          }
+          else if(count == 16)
+          {
+              document.getElementById('text').innerHTML = "Now I really am going to bed.";
+              count = count +1;
+              
+          }
+          else if(count == 17)
+          {
+              document.getElementById('text').innerHTML = "But first I'll share a bedtime story.";
+              count = count +1;
+              
+          }
+          else if(count == 18)
+          {
+              document.getElementById('text').innerHTML = "It's my favorite one.";
+              count = count +1;
+              
+          }
+          else if(count == 19)
+          {
+              document.getElementById('text').innerHTML = "There's a man in the woods...";
+              count = count +1;
+              
+          }
+          else if(count == 20)
+          {
+              document.getElementById('text').innerHTML = "He finds an old shack...";
+              count = count +1;
+              
+          }
+          else if(count == 21)
+          {
+              document.getElementById('text').innerHTML = "Inside there's nothing but a box in the middle of the floor...";
+              count = count +1;
+              
+          }
+          else if(count == 22)
+          {
+              document.getElementById('text').innerHTML = "He opens it and what does he see...";
+              count = count +1;
+              
+          }
+          else if(count == 23)
+          {
+              document.getElementById('text').innerHTML = "A button with a note...";
+              count = count +1;
+              
+          }
+          else if(count == 24)
+          {
+              document.getElementById('text').innerHTML = "Do you want to know what it says?";
+              count = count +1;
+              
+          }
+          else if(count == 25)
+          {
+              document.getElementById('text').innerHTML = "It says...";
+              count = count + 1;
+              
+          }
+          else if(count == 26)
+          {
+              document.getElementById('text').innerHTML = "Don't press the button";
+              count = 0;
+              
+          }
+
+
+        }
+        
+        function push2()
+        {
+            document.getElementById('blue').style.display='none';
+            document.getElementById('green').style.display='none';
+            document.getElementById('yellow').style.display='none';
+            document.getElementById('white').style.display='none';
+             document.getElementById('text').innerHTML = "I hate you.";
+             count = count + 1;
+        }
+        </script>
+        </script>
+    </body>
+</html>
